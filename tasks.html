@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Task Time - Tareas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Task Time</h1>
+        <nav>
+            <ul>
+                <li><a href="/home">Inicio</a></li>
+                <li><a href="/profile">Perfil</a></li>
+                <li><a href="/statistics">Estadísticas</a></li>
+                <li><a href="/logout">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="task-section">
+            <h2>Mis Tareas</h2>
+            <ul id="task-list">
+                <!-- Las tareas se cargarán dinámicamente aquí -->
+            </ul>
+        </section>
+        <section class="add-task-section">
+            <h2>Agregar Tarea</h2>
+            <form id="add-task-form">
+                <input type="text" id="task-name" placeholder="Nombre de la Tarea" required>
+                <input type="date" id="due-date" required>
+                <textarea id="task-description" placeholder="Descripción de la Tarea"></textarea>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
